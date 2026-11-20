@@ -66,8 +66,7 @@ const ClientCard = ({ client, plans, onMarkVisit, onSellMembership }) => {
         ) : (
           <p>У клиента нет абонемента</p>
         )}
-
-        <p>Статус: {getMembershipStatus()}</p>
+        <p className={`client-card__status--${String(getMembershipStatus()).replaceAll(' ', '-')}`}>Статус: {getMembershipStatus()}</p>
       </div>
 
       <div className="client-card__visits">

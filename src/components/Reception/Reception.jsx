@@ -128,6 +128,7 @@ const [clients, setClients] = useState(initialClients);
         <main className="reception__main">
             {selectedClient && (
             <ClientCard
+                key={selectedClient.id}
                 client={selectedClient}
                 plans={plans}
                 onMarkVisit={handleMarkVisit}
