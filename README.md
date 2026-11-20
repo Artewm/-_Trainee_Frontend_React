@@ -7,7 +7,7 @@
 Нужен Node.js (24.14+).
 
 ```bash
-git clone https://github.com/<логин>/<репозиторий>.git
+git clone https://github.com/Artewm/-_Trainee_Frontend_React.git
 cd <репозиторий>
 npm install
 npm run dev
@@ -18,7 +18,7 @@ npm run dev
 ## Сборка
 
 ```bash
-npm run build && npm run preview
+npm run build 
 ```
 
 ## Допущения
