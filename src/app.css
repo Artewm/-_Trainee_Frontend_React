@@ -1,0 +1,60 @@
+
+
+/* Убираем стандартные отступы */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Базовые настройки страницы */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+
+/* Убираем стили списков */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Убираем стандартное оформление ссылок */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Наследуем шрифт для элементов форм */
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+
+/* Изображения не выходят за пределы контейнера */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+
+
+
+
+
+
+
+

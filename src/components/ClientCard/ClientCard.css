@@ -1,0 +1,217 @@
+
+.client-card {
+  width: 100%;
+  max-width: 650px;
+  padding: 28px;
+  background: #ffffff;
+  border: 1px solid #e8edf3;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(15, 23, 42, 0.05);
+  color: #1e293b;
+}
+
+/* Шапка карточки */
+
+.client-card__header {
+  padding-bottom: 22px;
+  border-bottom: 1px solid #edf0f4;
+}
+
+.client-card__header h2 {
+  margin: 0 0 8px;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.client-card__header p {
+  margin: 0;
+  color: #64748b;
+  font-size: 14px;
+}
+
+/* Общие заголовки */
+
+.client-card h3 {
+  margin: 0 0 18px;
+  font-size: 17px;
+  font-weight: 650;
+  color: #1e293b;
+}
+
+/* Блок абонемента */
+
+.client-card__membership {
+  margin-top: 22px;
+  padding: 22px;
+  background: #f8fafc;
+  border: 1px solid #edf0f4;
+  border-radius: 14px;
+}
+
+.client-card__membership p {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 12px 0;
+  color: #64748b;
+  font-size: 14px;
+}
+
+.client-card__membership p:last-child {
+  margin-bottom: 0;
+}
+
+/* Статус абонемента */
+
+.client-card__status {
+  display: inline-flex;
+  width: fit-content;
+  padding: 7px 12px;
+  border-radius: 20px;
+  font-size: 13px !important;
+  font-weight: 600;
+}
+
+.client-card__status--Активен {
+  background: #dcfce7;
+  color: #15803d !important;
+}
+
+.client-card__status--Истёк {
+  background: #fee2e2;
+  color: #dc2626 !important;
+}
+
+.client-card__status--Занятия-закончились {
+  background: #fef3c7;
+  color: #b45309 !important;
+}
+
+.client-card__status--Нет-абонемента {
+  background: #e2e8f0;
+  color: #475569 !important;
+}
+
+/* История посещений */
+
+.client-card__visits {
+  margin-top: 26px;
+}
+
+.client-card__visits ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.client-card__visits li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+  background: #f8fafc;
+  border: 1px solid #edf0f4;
+  border-radius: 10px;
+  color: #475569;
+  font-size: 14px;
+}
+
+.client-card__visits li::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  flex-shrink: 0;
+  background: #3b82f6;
+  border-radius: 50%;
+}
+
+.client-card__visits > p {
+  padding: 16px;
+  background: #f8fafc;
+  border-radius: 10px;
+  color: #94a3b8;
+  font-size: 14px;
+}
+
+/* Кнопка посещения */
+
+.client-card__actions {
+  margin-top: 24px;
+}
+
+.client-card__actions button {
+  width: 100%;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 11px;
+  background: #2563eb;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.client-card__actions button:hover:not(:disabled) {
+  background: #1d4ed8;
+  transform: translateY(-1px);
+}
+
+.client-card__actions button:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.client-card__actions button:disabled {
+  background: #cbd5e1;
+  color: #64748b;
+  cursor: not-allowed;
+}
+
+.client-card__hint {
+  margin: 10px 0 0;
+  color: #dc2626;
+  font-size: 13px;
+  text-align: center;
+}
+
+/* Блок продажи */
+
+.client-card__sale {
+  margin-top: 20px;
+}
+
+.client-card__sale > p {
+  padding: 14px 16px;
+  margin: 0;
+  background: #eff6ff;
+  border: 1px solid #dbeafe;
+  border-radius: 10px;
+  color: #1d4ed8;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+/* Адаптив */
+
+@media (max-width: 480px) {
+  .client-card {
+    padding: 18px;
+    border-radius: 14px;
+  }
+
+  .client-card__header h2 {
+    font-size: 21px;
+  }
+
+  .client-card__membership {
+    padding: 16px;
+  }
+
+  .client-card__membership p {
+    font-size: 13px;
+  }
+}

@@ -1,0 +1,75 @@
+
+.client-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+/* Карточка клиента */
+.client {
+    padding: 16px 20px;
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    width: 100%;
+    text-align: left;
+    font: inherit;    
+}
+
+/* Наведение */
+.client:hover {
+  border-color: #93c5fd;
+  background-color: #f8fbff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Имя клиента */
+.client h3 {
+  margin: 0 0 6px;
+  color: #1f2937;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* Телефон */
+.client p {
+  margin: 0;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+/* Выбранный клиент */
+.client--active {
+  background-color: #eff6ff;
+  border: 1px solid #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.client--active h3 {
+  color: #2563eb;
+}
+
+/* Если клиенты не найдены */
+.client-list__empty {
+  padding: 24px;
+  color: #6b7280;
+  text-align: center;
+  background-color: #f9fafb;
+  border: 1px dashed #d1d5db;
+  border-radius: 12px;
+}
+
+/* Адаптация под мобильные устройства */
+@media (max-width: 480px) {
+  .client {
+    padding: 14px 16px;
+  }
+
+  .client h3 {
+    font-size: 15px;
+  }
+}

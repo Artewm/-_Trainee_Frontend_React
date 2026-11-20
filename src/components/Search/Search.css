@@ -1,0 +1,43 @@
+
+.search {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.search__input {
+  width: 100%;
+  padding: 14px 18px;
+  font-size: 15px;
+  font-family: inherit;
+  color: #1f2937;
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  outline: none;
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+}
+
+/* Placeholder */
+.search__input::placeholder {
+  color: #9ca3af;
+}
+
+/* Когда пользователь нажимает на поле */
+.search__input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.12);
+}
+
+/* Наведение */
+.search__input:hover {
+  border-color: #93c5fd;
+}
+
+/* Мобильная версия */
+@media (max-width: 480px) {
+  .search__input {
+    padding: 12px 14px;
+    font-size: 14px;
+  }
+}

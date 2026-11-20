@@ -1,0 +1,66 @@
+
+.reception {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.reception__header {
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.reception__header h1 {
+  display: inline-block;
+  padding-bottom: 8px;
+  border-bottom: 3px solid #1d4ed8;
+}
+
+/* Основная сетка */
+.reception__content {
+  display: grid;
+  grid-template-columns: minmax(260px, 340px) minmax(0, 650px);
+  justify-content: center;
+  align-items: start;
+  gap: 30px;
+}
+
+/* Левая колонка */
+.reception__sidebar {
+  width: 100%;
+  min-width: 0;
+}
+
+/* Правая колонка */
+.reception__main {
+  width: 100%;
+  min-width: 0;
+}
+
+/* Карточка клиента */
+.reception__main .client-card {
+  width: 100%;
+  max-width: 650px;
+}
+
+/* Адаптив */
+@media (max-width: 800px) {
+  .reception {
+    padding: 20px;
+  }
+
+  .reception__content {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .reception__main .client-card {
+    max-width: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .reception {
+    padding: 12px;
+  }
+}
